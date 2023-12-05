@@ -42,6 +42,7 @@ public class PropertyServiceImpl implements PropertyService {
     public List<PropertyDTO> getAllProperties() {
 
         System.out.println("Inside service " + dummy);
+        System.out.println("Inside service " + dburl);
         List<PropertyEntity> listOfProps= (List<PropertyEntity>)propertyRepository.findAll();
         List<PropertyDTO> propList = new ArrayList<>();
 
