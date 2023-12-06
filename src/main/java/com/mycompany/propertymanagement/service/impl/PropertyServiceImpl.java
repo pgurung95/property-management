@@ -22,7 +22,6 @@ public class PropertyServiceImpl implements PropertyService {
     @Value("${spring.datasource.url:}")
     private String dburl;
 
-
     @Autowired
     private PropertyRepository propertyRepository;
     @Autowired
